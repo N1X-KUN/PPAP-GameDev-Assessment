@@ -63,7 +63,7 @@ public class PlayerAtk : Singleton<PlayerAtk>
         if (attackButtonDown && !isAttacking)
         {
             isAttacking = true;
-            (CurrentPlayerAtk as IWeapon)?.Attack();
+            (CurrentPlayerAtk as IWeapon).Attack();
         }
     }
 }

@@ -1958,7 +1958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57167d42614e76247818e0df09c07ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveWeapon: {fileID: 0}
 --- !u!1 &753582892
 GameObject:
   m_ObjectHideFlags: 0
@@ -13149,6 +13148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  weaponCollider: {fileID: 1106806690}
   transitionName: 
 --- !u!210 &1525905366
 SortingGroup:
@@ -17691,7 +17691,7 @@ GameObject:
   - component: {fileID: 1701587159}
   - component: {fileID: 1701587160}
   m_Layer: 0
-  m_Name: Slash Effect
+  m_Name: SlashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,6 +7,7 @@ public class Player : Singleton<Player>
     public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
 
     [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private Transform weaponCollider;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -22,10 +23,11 @@ public class Player : Singleton<Player>
     {
         base.Awake();
 
-        // Remove DontDestroyOnLoad specifically for the Player instance
-        if (gameObject.transform.parent == null)
+        // Find DontDestroyOnLoad and set as parent
+        GameObject dontDestroyOnLoad = GameObject.Find("DontDestroyOnLoad");
+        if (dontDestroyOnLoad != null)
         {
-            UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(gameObject, UnityEngine.SceneManagement.SceneManager.GetActiveScene());
+            transform.SetParent(dontDestroyOnLoad.transform);
         }
 
         playerControls = new PlayerControls();
@@ -51,6 +53,10 @@ public class Player : Singleton<Player>
     {
         AdjustPlayerFacingDirection();
         Move();
+    }
+    public Transform GetWeaponCollider()
+    {
+        return weaponCollider;
     }
 
     private void PlayerInput()

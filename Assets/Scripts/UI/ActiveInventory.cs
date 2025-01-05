@@ -4,39 +4,12 @@ using UnityEngine;
 
 public class ActiveInventory : MonoBehaviour
 {
-    private static ActiveInventory _instance;
-    public static ActiveInventory Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<ActiveInventory>();
-                if (_instance == null)
-                {
-                    GameObject singleton = new GameObject(typeof(ActiveInventory).ToString());
-                    _instance = singleton.AddComponent<ActiveInventory>();
-                }
-            }
-            return _instance;
-        }
-    }
-
     private int activeSlotIndexNum = 0;
+
     private PlayerControls playerControls;
 
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(this.gameObject); // Make sure this is the root GameObject
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
         playerControls = new PlayerControls();
     }
 
@@ -73,19 +46,25 @@ public class ActiveInventory : MonoBehaviour
 
     private void ChangePlayerAtk()
     {
+        // Destroy the current weapon
         if (PlayerAtk.Instance.CurrentPlayerAtk != null)
         {
             Destroy(PlayerAtk.Instance.CurrentPlayerAtk.gameObject);
         }
 
+        // Reset attack state
+        PlayerAtk.Instance.ToggleIsAttacking(false);
+
+        // If no weapon is found in the slot, clear the player's attack
         if (!transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>())
         {
             PlayerAtk.Instance.WeaponNull();
             return;
         }
 
+        // Spawn the new weapon
         GameObject weaponToSpawn = transform.GetChild(activeSlotIndexNum).
-        GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
+            GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
 
         GameObject newWeapon = Instantiate(weaponToSpawn, PlayerAtk.Instance.transform.position, Quaternion.identity);
 
