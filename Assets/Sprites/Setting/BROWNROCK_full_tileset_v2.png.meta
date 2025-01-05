@@ -1,0 +1,2151 @@
+fileFormatVersion: 2
+guid: 61c332c07ee6d2e419f8f8a33f3ef19b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 256
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3d3746454266347880e1f37111490c
+      internalID: -1380507052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_1
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 845
+        width: 190
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2b614661621554a8eb98b67004e3c8
+      internalID: -1498091814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 748
+        width: 250
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dd3522f0ec5954c8cc30cc5f277cde
+      internalID: 22305916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_3
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 848
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b6ba100dea84241867a829fb616c1b
+      internalID: 1798977495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_4
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 867
+        width: 159
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210e38a5dfc75743bd77cfcb0caa385
+      internalID: -728816634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_5
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 848
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb93de188abf5e42be7ca0e5314ce25
+      internalID: 145177539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_6
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 867
+        width: 159
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eef1e5fd916454bbb96f7ff43ba167
+      internalID: -1246637016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c783dd3cf82137c41978a3093285a5d6
+      internalID: -311750563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_8
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 899
+        width: 75
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a8067b4cff09444b762cce72c884fc
+      internalID: -438317997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_9
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 929
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a257819a801a0744a886d454b87942da
+      internalID: 1841693443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_10
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 949
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a67facccea57f49a247702086e0882
+      internalID: 931907955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_11
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 864
+        width: 125
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b41c4e81162fd4d85fcc1c3dd7c6f7
+      internalID: -133024961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_12
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 933
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719c190b13e0444469100e35b5f79a3c
+      internalID: 258157871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_13
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 864
+        width: 30
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4291704b7022d0443bef0a8dae8b70a6
+      internalID: -58483874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_14
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 864
+        width: 29
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd158f4116afd34ca86ace1e14cc863
+      internalID: -1815261337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 916
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bddd1c87ea982a459b239b65f23f90a
+      internalID: -866559335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 897
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492e27a2862e9114ab3aa2455db691ce
+      internalID: 1742513755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_17
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 897
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bf022f53e115a41b967564aa6e98af
+      internalID: -1462737038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 880
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c190f2580853d7f4196c12d8aa16581e
+      internalID: 1816584355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 878
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efbd3a15d3d9124dbd47e981c9f3299
+      internalID: 855183323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 864
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5949139efe9803c419cb417e065a212c
+      internalID: 1214074603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 864
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32104364e13cff45aef21dd26c485cb
+      internalID: -764722069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_22
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 860
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b9b4890c9700f44b80f1e5f3c79668
+      internalID: 1899579945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_23
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 873
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b7d7f773193a043a5fc57b7b1eef46
+      internalID: -1418789548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_24
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 871
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c163eae4785ff89489d7c2a6f1c2cbb8
+      internalID: -1870443500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_25
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 866
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7dfe8b6b9f1e64991b2e18e0ed5c1c
+      internalID: 955540869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_26
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 847
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841aa3717e58c3a46894ad593548313f
+      internalID: 1214972306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_27
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 854
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ee0b83edc443040921bcb4dd801929
+      internalID: -1383495396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_28
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 857
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2040d476507044e93f284994006333
+      internalID: 1450382422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_29
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 836
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b9e77ee7eb59544835262f2bf81d60
+      internalID: 537573168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 768
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67204aa7cae6a6641a0d501964b8877e
+      internalID: 1770341321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_31
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 705
+        width: 157
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657b116e204416e4a8c46362c3b65606
+      internalID: 1705044946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_32
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 705
+        width: 312
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4877594900e450143b5401870cd85467
+      internalID: 1336255211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_33
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 705
+        width: 155
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1a51cecbd6b464d8341af45d5d5470
+      internalID: -486879589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_34
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 842
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6849f7d213c774ba3635844349eae7
+      internalID: 834465833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 844
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af20d32fc02e94240a9f624170953a40
+      internalID: -1145819063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_36
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 846
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a3d676ee036be438af8fda1b991633
+      internalID: 2021297825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_37
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 768
+        width: 55
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cb1d4dd0d3d364c82f01529e13aa98
+      internalID: -1699040994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_38
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 833
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc40895f52577148aa02c602d95be98
+      internalID: -782944549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 736
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b23bdcb277c9934ba09910f05b351c5
+      internalID: -464810323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 814
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66729b6a440e3584fb5e1df0cfe3549b
+      internalID: 1772006469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_41
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 818
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb605e059b3a5f4fb000932e93c832e
+      internalID: -788459994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_42
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 813
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bf7edbf7004d04aa85d4cce3bcf7d7
+      internalID: 115571858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_43
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 768
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e668fc8288b27441a15e7179003dc09
+      internalID: -215725955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_44
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 768
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffc09170a1bdf0459a367a70aa7b1b5
+      internalID: -49082123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_45
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 800
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242d17404be37e84daae55ea292e419a
+      internalID: -1708193683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_46
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 810
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8956f0dd7cd42e14a8035541a1828e42
+      internalID: 709017791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_47
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 807
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a8640daeddd2c4e94db72dd16100b0
+      internalID: 648637080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_48
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 800
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5b91ecf4ca85144b300f326d891b6e
+      internalID: 594128046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_49
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 802
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadf6568f6ca90c4ba5726dd0a9b5370
+      internalID: -496951988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 672
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446629fea2a0a6e4b8b6208bd0b90d43
+      internalID: -1304264860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_51
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 789
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe29b445df71654687d7047a538ac33
+      internalID: 755042507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_52
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 769
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388f8b4c6c87c7a408f30306223aeb87
+      internalID: -307462613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_53
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 782
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f17ddcbfcf210d4985ddca7bef8c8a9
+      internalID: 1015634568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_54
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 772
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7d8b79fcdbe3946949b19d105f0ab2
+      internalID: 499824689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_55
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 776
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b9d80356d92a043ba6d198d053235c
+      internalID: -694993780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_56
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 769
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5d222b838d36f45a8c9ac425868717
+      internalID: -2088518845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_57
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 740
+        width: 63
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854d44bf0fd443f4bad70816a15a7a24
+      internalID: -991460099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_58
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 739
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec51ab34b3fce540b908df047491eae
+      internalID: 1780721786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_59
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 615
+        width: 256
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92aaebe0fcfe5334e94f7ef8256c8b5c
+      internalID: 1662322126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6440b92caccc04ca06263b6594ea94
+      internalID: 90460962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 544
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7bdea75c34f42459ad55fbd7c4c72e
+      internalID: -454519715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_62
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 596
+        width: 128
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5802810e9ebdafc4aaa9c8a40f4884f3
+      internalID: 153260874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_63
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 608
+        width: 192
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eadcf76751682a438d31be824dd57dc
+      internalID: -275516111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_64
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 615
+        width: 51
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb77c9742d1d540a237b4e92f9853d
+      internalID: 512861605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_65
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 413
+        width: 217
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc3362390853dd45a327c44252dcac7
+      internalID: 670667688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_66
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 608
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a527d2142dc798745af560eaa1dfcbec
+      internalID: 1583915835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_67
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 556
+        width: 104
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9e5eb0cabd05a45a04bc17820a4e19
+      internalID: -1097020584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_68
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 557
+        width: 89
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524f9fc89c50a3a49a1eacb969b83e25
+      internalID: 529065915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_69
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 456
+        width: 63
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baef302f622fed429bd3ade8f28f697
+      internalID: -127087377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_70
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 556
+        width: 104
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b247a75706a844a8828a1c577632ea
+      internalID: -1385254811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_71
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 557
+        width: 89
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc4940401b49ed47b9075e9dfca2c8d
+      internalID: 1161199055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_72
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 456
+        width: 63
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8ad33608b8a0c40b747839ca6f05cc
+      internalID: -909163025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_73
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 416
+        width: 30
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a37adad9f8dc047b72bc9bfa543d60
+      internalID: 1256532978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 69
+        width: 513
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9908073c47e020a43bd00c84a976d34b
+      internalID: -1281282964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_75
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 534
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00996b30c955e9640923441970a03b92
+      internalID: 1058839883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_76
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 358
+        width: 219
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1305354b72d409b4cb3e688be4291a0d
+      internalID: -1698654568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_77
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 359
+        width: 219
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff9099331f8bab4eaa9cc116eaae51a
+      internalID: -1885620616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_78
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 416
+        width: 99
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa52431272e5496479b7436a95f84139
+      internalID: 819911518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_79
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 416
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fe5a2469216c8469da386a481b82ad
+      internalID: -252254237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_80
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 471
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59683b5b471880479baff386531eca2
+      internalID: -168427664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_81
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 461
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18d06e539e659c4c867ac262a4f5c56
+      internalID: -1061952785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_82
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 461
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4212f7af624968749b9c619c60e183a1
+      internalID: -236252975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 66
+        width: 384
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a259ab91ec354e4db37d4e567e1d23e
+      internalID: 55700929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_84
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 32
+        width: 640
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ba78ee4599fb0459f787820bdf9c9e
+      internalID: 1077568961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_85
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 397
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a56169d065083048ba3224ee2f05af3
+      internalID: -1082668642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_86
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 362
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9ba231f99852e4c827b193b8a5e2c3
+      internalID: -464041764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_87
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 397
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a846c01fd5118b0418999693cbe71757
+      internalID: 617867798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_88
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 362
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8b64ed9099a184aa80c3b46b63f52a
+      internalID: -969663092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_89
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 161
+        width: 256
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665de12080d293043aa9141f636144c2
+      internalID: 688372575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_90
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 32
+        width: 142
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec363531e3ddc1743b60c01d4cf0a5ce
+      internalID: 1515773467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BROWNROCK_full_tileset_v2_91
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 577
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed9453486a90f744880b3630b51cbc0
+      internalID: -916518707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BROWNROCK_full_tileset_v2_0: -1380507052
+      BROWNROCK_full_tileset_v2_1: -1498091814
+      BROWNROCK_full_tileset_v2_10: 931907955
+      BROWNROCK_full_tileset_v2_11: -133024961
+      BROWNROCK_full_tileset_v2_12: 258157871
+      BROWNROCK_full_tileset_v2_13: -58483874
+      BROWNROCK_full_tileset_v2_14: -1815261337
+      BROWNROCK_full_tileset_v2_15: -866559335
+      BROWNROCK_full_tileset_v2_16: 1742513755
+      BROWNROCK_full_tileset_v2_17: -1462737038
+      BROWNROCK_full_tileset_v2_18: 1816584355
+      BROWNROCK_full_tileset_v2_19: 855183323
+      BROWNROCK_full_tileset_v2_2: 22305916
+      BROWNROCK_full_tileset_v2_20: 1214074603
+      BROWNROCK_full_tileset_v2_21: -764722069
+      BROWNROCK_full_tileset_v2_22: 1899579945
+      BROWNROCK_full_tileset_v2_23: -1418789548
+      BROWNROCK_full_tileset_v2_24: -1870443500
+      BROWNROCK_full_tileset_v2_25: 955540869
+      BROWNROCK_full_tileset_v2_26: 1214972306
+      BROWNROCK_full_tileset_v2_27: -1383495396
+      BROWNROCK_full_tileset_v2_28: 1450382422
+      BROWNROCK_full_tileset_v2_29: 537573168
+      BROWNROCK_full_tileset_v2_3: 1798977495
+      BROWNROCK_full_tileset_v2_30: 1770341321
+      BROWNROCK_full_tileset_v2_31: 1705044946
+      BROWNROCK_full_tileset_v2_32: 1336255211
+      BROWNROCK_full_tileset_v2_33: -486879589
+      BROWNROCK_full_tileset_v2_34: 834465833
+      BROWNROCK_full_tileset_v2_35: -1145819063
+      BROWNROCK_full_tileset_v2_36: 2021297825
+      BROWNROCK_full_tileset_v2_37: -1699040994
+      BROWNROCK_full_tileset_v2_38: -782944549
+      BROWNROCK_full_tileset_v2_39: -464810323
+      BROWNROCK_full_tileset_v2_4: -728816634
+      BROWNROCK_full_tileset_v2_40: 1772006469
+      BROWNROCK_full_tileset_v2_41: -788459994
+      BROWNROCK_full_tileset_v2_42: 115571858
+      BROWNROCK_full_tileset_v2_43: -215725955
+      BROWNROCK_full_tileset_v2_44: -49082123
+      BROWNROCK_full_tileset_v2_45: -1708193683
+      BROWNROCK_full_tileset_v2_46: 709017791
+      BROWNROCK_full_tileset_v2_47: 648637080
+      BROWNROCK_full_tileset_v2_48: 594128046
+      BROWNROCK_full_tileset_v2_49: -496951988
+      BROWNROCK_full_tileset_v2_5: 145177539
+      BROWNROCK_full_tileset_v2_50: -1304264860
+      BROWNROCK_full_tileset_v2_51: 755042507
+      BROWNROCK_full_tileset_v2_52: -307462613
+      BROWNROCK_full_tileset_v2_53: 1015634568
+      BROWNROCK_full_tileset_v2_54: 499824689
+      BROWNROCK_full_tileset_v2_55: -694993780
+      BROWNROCK_full_tileset_v2_56: -2088518845
+      BROWNROCK_full_tileset_v2_57: -991460099
+      BROWNROCK_full_tileset_v2_58: 1780721786
+      BROWNROCK_full_tileset_v2_59: 1662322126
+      BROWNROCK_full_tileset_v2_6: -1246637016
+      BROWNROCK_full_tileset_v2_60: 90460962
+      BROWNROCK_full_tileset_v2_61: -454519715
+      BROWNROCK_full_tileset_v2_62: 153260874
+      BROWNROCK_full_tileset_v2_63: -275516111
+      BROWNROCK_full_tileset_v2_64: 512861605
+      BROWNROCK_full_tileset_v2_65: 670667688
+      BROWNROCK_full_tileset_v2_66: 1583915835
+      BROWNROCK_full_tileset_v2_67: -1097020584
+      BROWNROCK_full_tileset_v2_68: 529065915
+      BROWNROCK_full_tileset_v2_69: -127087377
+      BROWNROCK_full_tileset_v2_7: -311750563
+      BROWNROCK_full_tileset_v2_70: -1385254811
+      BROWNROCK_full_tileset_v2_71: 1161199055
+      BROWNROCK_full_tileset_v2_72: -909163025
+      BROWNROCK_full_tileset_v2_73: 1256532978
+      BROWNROCK_full_tileset_v2_74: -1281282964
+      BROWNROCK_full_tileset_v2_75: 1058839883
+      BROWNROCK_full_tileset_v2_76: -1698654568
+      BROWNROCK_full_tileset_v2_77: -1885620616
+      BROWNROCK_full_tileset_v2_78: 819911518
+      BROWNROCK_full_tileset_v2_79: -252254237
+      BROWNROCK_full_tileset_v2_8: -438317997
+      BROWNROCK_full_tileset_v2_80: -168427664
+      BROWNROCK_full_tileset_v2_81: -1061952785
+      BROWNROCK_full_tileset_v2_82: -236252975
+      BROWNROCK_full_tileset_v2_83: 55700929
+      BROWNROCK_full_tileset_v2_84: 1077568961
+      BROWNROCK_full_tileset_v2_85: -1082668642
+      BROWNROCK_full_tileset_v2_86: -464041764
+      BROWNROCK_full_tileset_v2_87: 617867798
+      BROWNROCK_full_tileset_v2_88: -969663092
+      BROWNROCK_full_tileset_v2_89: 688372575
+      BROWNROCK_full_tileset_v2_9: 1841693443
+      BROWNROCK_full_tileset_v2_90: 1515773467
+      BROWNROCK_full_tileset_v2_91: -916518707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
