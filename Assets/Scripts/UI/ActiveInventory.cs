@@ -52,8 +52,7 @@ public class ActiveInventory : MonoBehaviour
             Destroy(PlayerAtk.Instance.CurrentPlayerAtk.gameObject);
         }
 
-        // Reset attack state
-        PlayerAtk.Instance.ToggleIsAttacking(false);
+        // PlayerAtk.Instance.ToggleIsAttacking(false);
 
         // If no weapon is found in the slot, clear the player's attack
         if (!transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>())

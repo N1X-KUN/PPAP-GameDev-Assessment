@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour, IWeapon
 {
+    [SerializeField] private WeaponInfo weaponInfo;
+
     public void Attack()
     {
-        Debug.Log("Bow is Shooting?");
-        // Add appropriate logic here or a method you need from your codebase
-        // ActiveInventory.Instance.SomeMethod(); 
+        Debug.Log("Bow Shooting?");
+    }
+
+    public WeaponInfo GetWeaponInfo()
+    {
+        return weaponInfo;
     }
 }
