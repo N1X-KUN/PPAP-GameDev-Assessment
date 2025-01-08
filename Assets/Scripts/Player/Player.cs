@@ -14,6 +14,7 @@ public class Player : Singleton<Player>
     private Rigidbody2D rb;
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
+    private Knockback knockback;
 
     private bool facingLeft = false;
 
@@ -36,6 +37,7 @@ public class Player : Singleton<Player>
         mySpriteRender = GetComponent<SpriteRenderer>();
 
         Debug.Log("Player initialized: " + transitionName);
+        knockback = GetComponent<Knockback>();
     }
 
 
@@ -69,6 +71,8 @@ public class Player : Singleton<Player>
 
     private void Move()
     {
+        if (knockback.gettingKnockedBack) { return; }
+
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
     }
 
