@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3213658730974532178}
   - component: {fileID: 4036110385460659975}
   - component: {fileID: 5505190779883929711}
+  - component: {fileID: 8627745393246422120}
   m_Layer: 6
   m_Name: Water Slime
   m_TagString: Enemy
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da4172dac1779d4e90242692cb78996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1
 --- !u!114 &6086263395815461827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55016b72b6945ba4cbfddfa852c9e9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roamChangeDirFloat: 2
+  attackRange: 5
+  enemyType: {fileID: 8627745393246422120}
+  attackCooldown: 2
+  stopMovingWhileAttacking: 1
 --- !u!95 &1329720749012511082
 Animator:
   serializedVersion: 5
@@ -241,3 +247,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: b5e6a33f38059744f97932655ddf7856, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &8627745393246422120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919916553205725568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68290c781b8af874e84d000e0fba7423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4099515308302490774, guid: 916145812bcbe394aac90eed4c213b92, type: 3}
