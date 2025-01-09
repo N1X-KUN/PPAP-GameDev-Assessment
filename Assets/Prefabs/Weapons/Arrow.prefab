@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6811704411342611299}
   - component: {fileID: 3842362363376222035}
-  - component: {fileID: 2990636662719401179}
   - component: {fileID: 4528083799202883735}
   - component: {fileID: 5917622478165819462}
   - component: {fileID: 8416890108586092075}
   - component: {fileID: 723402182018900074}
+  - component: {fileID: 9135186684454387224}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3499177199447254952}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.7907846, y: -1.9215761, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -89,41 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &2990636662719401179
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3499177199447254952}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.06593327, y: -0.0019393064}
-  m_Size: {x: 0.7116587, y: 0.21642853}
-  m_Direction: 1
 --- !u!50 &4528083799202883735
 Rigidbody2D:
   serializedVersion: 4
@@ -290,3 +255,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   particleOnHitPrefabVFX: {fileID: 535664073363720015, guid: 86bcce520bacc5544a5c40348f06dbd4, type: 3}
+  isEnemyProjectile: 0
+  projectileRange: 10
+--- !u!70 &9135186684454387224
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499177199447254952}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05701522, y: 0.0013575066}
+  m_Size: {x: 0.6984696, y: 0.3261848}
+  m_Direction: 1

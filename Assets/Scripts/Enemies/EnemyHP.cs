@@ -27,8 +27,12 @@ public class EnemyHP : MonoBehaviour
         currentHealth -= damage;
         knockback.GetKnockedBack(Player.Instance.transform, 15f);
         StartCoroutine(flash.FlashRoutine());
+
+        // Call DetectDeath to check if the enemy should die
+        DetectDeath();
     }
 
+    // Change to public so Flash can call it
     public void DetectDeath()
     {
         if (currentHealth <= 0)

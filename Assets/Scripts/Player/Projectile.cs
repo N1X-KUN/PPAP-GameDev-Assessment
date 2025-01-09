@@ -38,21 +38,26 @@ public class Projectile : MonoBehaviour
         Shatterproof shatterproof = other.gameObject.GetComponent<Shatterproof>();
         PlayerHP player = other.gameObject.GetComponent<PlayerHP>();
 
-        if (!other.isTrigger && (enemyHP || shatterproof || player))
+        // Removed !other.isTrigger from condition
+        if (enemyHP || shatterproof || player)
         {
             if ((player && isEnemyProjectile) || (enemyHP && !isEnemyProjectile))
             {
-                player?.TakeDamage(1, transform);
+                // Damage enemy or player
+                enemyHP?.TakeDamage(1); // Damage enemy
+                player?.TakeDamage(1, transform); // Damage player
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
-            else if (!other.isTrigger && shatterproof)
+            else if (shatterproof)
             {
+                // Handle destructible objects
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
         }
     }
+
 
     private void DetectFireDistance()
     {
