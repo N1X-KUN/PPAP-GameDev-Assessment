@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5640734061993039805}
   - component: {fileID: 8148624094302939104}
   - component: {fileID: 3811924230771106490}
+  - component: {fileID: 4446710021178665659}
   - component: {fileID: 7622932028635250740}
+  - component: {fileID: -222649746688901}
   m_Layer: 0
   m_Name: Bosh
   m_TagString: Untagged
@@ -115,12 +117,47 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.039699793, y: -0.13894844}
   m_Size: {x: 2, y: 2}
   m_Direction: 0
+--- !u!58 &4446710021178665659
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4637754204696626973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.039699793, y: -0.13894844}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!114 &7622932028635250740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +171,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 4918552008903304616, guid: 4b7ba11116db9b64cace1da0600ceb05, type: 3}
+--- !u!114 &-222649746688901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4637754204696626973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d92d7e69317624ca9cc37bcc66ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goinPrefab: {fileID: 1021797238354301237, guid: ca5fd3249d6701247960f36588dd0339, type: 3}

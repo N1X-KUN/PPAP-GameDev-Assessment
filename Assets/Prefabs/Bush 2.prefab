@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4325011314115526304}
   - component: {fileID: 4892098926025322292}
   - component: {fileID: 6011605300293444696}
+  - component: {fileID: 1786479103477961364}
+  - component: {fileID: 4113055281288358365}
   m_Layer: 0
   m_Name: Bush 2
   m_TagString: Untagged
@@ -128,9 +130,57 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.019850254, y: 0.5557976}
   m_Size: {x: 2, y: 2}
   m_Direction: 0
+--- !u!58 &1786479103477961364
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6485430338135128867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019850254, y: 0.5557976}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &4113055281288358365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6485430338135128867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d92d7e69317624ca9cc37bcc66ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goinPrefab: {fileID: 1021797238354301237, guid: ca5fd3249d6701247960f36588dd0339, type: 3}

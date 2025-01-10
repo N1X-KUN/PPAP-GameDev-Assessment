@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2504311234208304778}
   - component: {fileID: 6684716907468521201}
   - component: {fileID: 2238305447381284420}
+  - component: {fileID: 7766570453463314619}
   - component: {fileID: 8813655409308786600}
+  - component: {fileID: 5628113072363384082}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -115,7 +117,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.29447365}
@@ -131,6 +133,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.9110527}
   m_EdgeRadius: 0
+--- !u!70 &7766570453463314619
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729060792280506234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2, y: 2.5}
+  m_Direction: 0
 --- !u!114 &8813655409308786600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +181,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 4918552008903304616, guid: 969abadc8d3f4a3409f1cbbdc6c1feb8, type: 3}
+--- !u!114 &5628113072363384082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729060792280506234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d92d7e69317624ca9cc37bcc66ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goinPrefab: {fileID: 1021797238354301237, guid: ca5fd3249d6701247960f36588dd0339, type: 3}
