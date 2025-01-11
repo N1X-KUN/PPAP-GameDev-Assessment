@@ -76,8 +76,21 @@ public class PlayerAtk : Singleton<PlayerAtk>
     {
         if (attackButtonDown && !isAttacking)
         {
+            if (CurrentPlayerAtk == null)
+            {
+                Debug.LogError("No weapon equipped! CurrentPlayerAtk is null.");
+                return;
+            }
+
+            IWeapon weapon = CurrentPlayerAtk as IWeapon;
+            if (weapon == null)
+            {
+                Debug.LogError("CurrentPlayerAtk does not implement IWeapon!");
+                return;
+            }
+
             AttackCooldown();
-            (CurrentPlayerAtk as IWeapon).Attack();
+            weapon.Attack();
         }
     }
 }
