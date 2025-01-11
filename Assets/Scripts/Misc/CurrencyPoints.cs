@@ -6,7 +6,7 @@ using TMPro;
 public class CurrencyPoints : Singleton<CurrencyPoints>
 {
     private TMP_Text goldText;
-    private int currentGold = 0;
+    private static int currentGold = 0; // Static variable persists across scenes
 
     const string COIN_AMOUNT_TEXT = "Coin Amount Text";
 
@@ -22,3 +22,4 @@ public class CurrencyPoints : Singleton<CurrencyPoints>
         goldText.text = currentGold.ToString("D3");
     }
 }
+
