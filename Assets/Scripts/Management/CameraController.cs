@@ -5,8 +5,6 @@ using Cinemachine;
 
 public class CameraController : Singleton<CameraController>
 {
-    private bool followAssigned = false;
-
     private void Start()
     {
         AssignPlayerToAllVirtualCameras(); // Assign on start (for scene reloads)

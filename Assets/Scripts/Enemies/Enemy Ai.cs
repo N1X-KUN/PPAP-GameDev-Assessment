@@ -6,7 +6,7 @@ public class EnemyAi : MonoBehaviour
 {
     [SerializeField] private float roamChangeDirFloat = 2f;
     [SerializeField] private float attackRange = 5f;
-    [SerializeField] private MonoBehaviour enemyType;
+    [SerializeField] private MonoBehaviour enemyType; // Attach script that implements IEnemy
     [SerializeField] private float attackCooldown = 2f;
     [SerializeField] private bool stopMovingWhileAttacking = false;
 
@@ -15,7 +15,8 @@ public class EnemyAi : MonoBehaviour
     private enum State
     {
         Roaming,
-        Attacking
+        Attacking,
+        Tracking // Added state for tracking behavior
     }
 
     private Vector2 roamPosition;
@@ -27,7 +28,7 @@ public class EnemyAi : MonoBehaviour
     private void Awake()
     {
         enemyFound = GetComponent<EnemyFound>();
-        state = State.Roaming;
+        state = State.Roaming; // Default to roaming
     }
 
     private void Start()
@@ -52,6 +53,10 @@ public class EnemyAi : MonoBehaviour
             case State.Attacking:
                 Attacking();
                 break;
+
+            case State.Tracking: // Added tracking behavior
+                Tracking();
+                break;
         }
     }
 
@@ -61,11 +66,13 @@ public class EnemyAi : MonoBehaviour
 
         enemyFound.MoveTo(roamPosition);
 
+        // Check if player is within attack range
         if (Vector2.Distance(transform.position, Player.Instance.transform.position) < attackRange)
         {
-            state = State.Attacking;
+            state = enemyType != null ? State.Attacking : State.Tracking; // Switch to appropriate state
         }
 
+        // Change roaming position after a certain time
         if (timeRoaming > roamChangeDirFloat)
         {
             roamPosition = GetRoamingPosition();
@@ -74,17 +81,29 @@ public class EnemyAi : MonoBehaviour
 
     private void Attacking()
     {
+        // Return to roaming if out of attack range
         if (Vector2.Distance(transform.position, Player.Instance.transform.position) > attackRange)
         {
             state = State.Roaming;
+            return;
         }
 
         if (attackRange != 0 && canAttack)
         {
-
             canAttack = false;
-            (enemyType as IEnemy).Attack();
 
+            // Ensure enemyType is not null and implements IEnemy
+            IEnemy enemy = enemyType as IEnemy;
+            if (enemy != null)
+            {
+                enemy.Attack(); // Call the attack method
+            }
+            else
+            {
+                Debug.LogWarning($"EnemyType is not set or doesn't implement IEnemy on {gameObject.name}");
+            }
+
+            // Handle movement while attacking
             if (stopMovingWhileAttacking)
             {
                 enemyFound.StopMoving();
@@ -94,7 +113,27 @@ public class EnemyAi : MonoBehaviour
                 enemyFound.MoveTo(roamPosition);
             }
 
+            // Start the attack cooldown
             StartCoroutine(AttackCooldownRoutine());
+        }
+    }
+
+    private void Tracking()
+    {
+        if (Player.Instance == null)
+        {
+            enemyFound.StopMoving();
+            return;
+        }
+
+        // Move towards the player (tracking behavior)
+        Vector2 moveDirection = (Player.Instance.transform.position - transform.position).normalized;
+        enemyFound.MoveTo(moveDirection);
+
+        // If within attack range and `enemyType` is set, switch to attacking
+        if (Vector2.Distance(transform.position, Player.Instance.transform.position) < attackRange && enemyType != null)
+        {
+            state = State.Attacking;
         }
     }
 

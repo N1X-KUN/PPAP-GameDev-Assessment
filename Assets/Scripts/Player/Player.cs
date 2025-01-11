@@ -8,6 +8,7 @@ public class Player : Singleton<Player>
 
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private int maxHealth = 10; // Maximum health
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -17,6 +18,7 @@ public class Player : Singleton<Player>
     private Knockback knockback;
 
     private bool facingLeft = false;
+    private int currentHealth; // Player's current health
 
     public string transitionName = "DefaultTransition"; // Ensure default value for safety
 
@@ -38,8 +40,9 @@ public class Player : Singleton<Player>
 
         Debug.Log("Player initialized: " + transitionName);
         knockback = GetComponent<Knockback>();
-    }
 
+        currentHealth = maxHealth; // Initialize health
+    }
 
     private void OnEnable()
     {
@@ -56,6 +59,7 @@ public class Player : Singleton<Player>
         AdjustPlayerFacingDirection();
         Move();
     }
+
     public Transform GetWeaponCollider()
     {
         return weaponCollider;

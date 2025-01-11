@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  spriteRenderer: {fileID: 3027995085364786565}
 --- !u!114 &6086263395815461827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
   attackRange: 5
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 1701255106294762713}
   attackCooldown: 2
   stopMovingWhileAttacking: 0
 --- !u!95 &1329720749012511082
