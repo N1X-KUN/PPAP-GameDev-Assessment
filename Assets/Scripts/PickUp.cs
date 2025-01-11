@@ -97,7 +97,7 @@ public class PickUp : MonoBehaviour
         switch (pickUpType)
         {
             case PickUpType.GoldCoin:
-                // do goldcoin stuff
+                CurrencyPoints.Instance.UpdateCurrentGold();
                 Debug.Log("GoldCoin");
                 break;
             case PickUpType.HP:

@@ -14,6 +14,7 @@ public class PlayerHP : Singleton<PlayerHP>
     private bool canTakeDamage = true;
     private Knockback knockback;
     private Flash flash;
+    const string HEALTH_SLIDER_TEXT = "HP Slider";
 
     protected override void Awake()
     {
@@ -79,7 +80,7 @@ public class PlayerHP : Singleton<PlayerHP>
     {
         if (hPSlider == null)
         {
-            hPSlider = GameObject.Find("HP Slider").GetComponent<Slider>();
+            hPSlider = GameObject.Find(HEALTH_SLIDER_TEXT).GetComponent<Slider>();
         }
 
         hPSlider.maxValue = maxHealth;
