@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside House.unity
     guid: db6e04ce655459d4caf3d7d44103c277
+  - enabled: 1
+    path: Assets/Scenes/Cave.unity
+    guid: 472d5fc09f1bd9347a5358ddfd367b58
   m_configObjects: {}
