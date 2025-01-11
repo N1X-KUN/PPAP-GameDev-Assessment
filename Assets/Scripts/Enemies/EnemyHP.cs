@@ -38,6 +38,7 @@ public class EnemyHP : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
+            GetComponent<PickUpSpawn>().DropItems();
             Destroy(gameObject);
         }
     }

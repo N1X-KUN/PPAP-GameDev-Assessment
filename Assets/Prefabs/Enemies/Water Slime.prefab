@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4036110385460659975}
   - component: {fileID: 5505190779883929711}
   - component: {fileID: 8627745393246422120}
+  - component: {fileID: 6444718365362955219}
   m_Layer: 6
   m_Name: Water Slime
   m_TagString: Enemy
@@ -268,3 +269,18 @@ MonoBehaviour:
   startingDistance: 0.1
   timeBetweenBursts: 0.5
   restTime: 1
+--- !u!114 &6444718365362955219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919916553205725568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d92d7e69317624ca9cc37bcc66ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 1021797238354301237, guid: b43889b59077ea44d8581652a941d252, type: 3}
+  hP: {fileID: 1021797238354301237, guid: ca5fd3249d6701247960f36588dd0339, type: 3}
+  surpriseEnemy: {fileID: 1021797238354301237, guid: 6ebfaf78361008840a46dbf1d39a3d51, type: 3}

@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 2989250609919229576}
   - component: {fileID: 2854236657868582225}
   - component: {fileID: 2403719911864285668}
+  - component: {fileID: -9033590878684066098}
   m_Layer: 0
   m_Name: Suprise Enemy
   m_TagString: Enemy
@@ -206,8 +207,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.99972534
-      value: 0.0004119873
+      time: 0.10507202
+      value: -0.0019989014
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -303,3 +304,18 @@ MonoBehaviour:
   enemyType: {fileID: 1630001565011917771}
   attackCooldown: 2
   stopMovingWhileAttacking: 0
+--- !u!114 &-9033590878684066098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021797238354301237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d92d7e69317624ca9cc37bcc66ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 1021797238354301237, guid: b43889b59077ea44d8581652a941d252, type: 3}
+  hP: {fileID: 1021797238354301237, guid: ca5fd3249d6701247960f36588dd0339, type: 3}
+  surpriseEnemy: {fileID: 1021797238354301237}

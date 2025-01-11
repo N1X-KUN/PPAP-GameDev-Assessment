@@ -18923,6 +18923,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 892177640417406818, guid: da1363b071f6d9b44b116d4a4391b716, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 892177640417406818, guid: da1363b071f6d9b44b116d4a4391b716, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212379668444125244, guid: da1363b071f6d9b44b116d4a4391b716, type: 3}
       propertyPath: m_Name
       value: UICanvas
