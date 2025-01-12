@@ -12,6 +12,17 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     private TypeWriterEffect typeWriterEffect;
 
+    // Mute or hide this class to avoid warnings and functionality for now
+    // Commenting out the 'DontDestroyOnLoad' class to mute it
+    // The 'new' keyword is not necessary anymore, as we're commenting it out
+    // public class DontDestroyOnLoad : MonoBehaviour
+    // {
+    //     private void Awake()
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //     }
+    // }
+
     private void Start()
     {
         typeWriterEffect = GetComponent<TypeWriterEffect>();

@@ -29,4 +29,9 @@ public class Knockback : MonoBehaviour
         rb.velocity = Vector2.zero;
         gettingKnockedBack = false;
     }
+    public void ResetKnockbackState()
+    {
+        gettingKnockedBack = false;
+    }
+
 }

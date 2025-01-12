@@ -6,7 +6,7 @@ public class Player : Singleton<Player>
 {
     public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
 
-    [SerializeField] private DialogueUI dialogueUI;
+    // Removed DialogueUI reference since it's commented out.
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform weaponCollider;
     [SerializeField] private int maxHealth = 10; // Maximum health
@@ -23,9 +23,10 @@ public class Player : Singleton<Player>
 
     public string transitionName = "DefaultTransition"; // Ensure default value for safety
 
-    public DialogueUI DialogueUI => dialogueUI;
+    // Removed DialogueUI property
+    // public DialogueUI DialogueUI => dialogueUI;  // Commented out
 
-    public Interactable Interactable {get; set; }
+    public Interactable Interactable { get; set; }
 
     protected override void Awake()
     {
@@ -43,21 +44,45 @@ public class Player : Singleton<Player>
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
 
-        Debug.Log("Player initialized: " + transitionName);
         knockback = GetComponent<Knockback>();
-
         currentHealth = maxHealth; // Initialize health
+
+        // Dynamically find DialogueUI - this line is commented out.
+        // FindDialogueUI();
+    }
+
+    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        Debug.Log("Scene Loaded: " + scene.name + ". Reassigning DialogueUI.");
+        // FindDialogueUI(); // This line is commented out.
+    }
+
+    //private void FindDialogueUI()  // This method is now irrelevant since DialogueUI is removed.
+    //{
+    //    // DialogUI-related code is commented out here.
+    //}
+
+    private void Start()
+    {
+        ActiveInventory.Instance.EquipStartingWeapon();
+        // FindDialogueUI();  // This line is commented out.
     }
 
     private void OnEnable()
     {
         playerControls.Enable();
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded; // Register event
+    }
+
+    private void OnDisable()
+    {
+        playerControls.Disable();
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded; // Unregister event
     }
 
     private void Update()
     {
-        if (dialogueUI.IsOpen) return;
-
+        // Removed dialogueUI-related checks.
         PlayerInput();
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -90,7 +115,7 @@ public class Player : Singleton<Player>
 
     private void Move()
     {
-        if (knockback.gettingKnockedBack) { return; }
+        if (knockback.gettingKnockedBack || PlayerHP.Instance.isDead) { return; }
 
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
     }

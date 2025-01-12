@@ -27,9 +27,15 @@ public class DialogueActivate : MonoBehaviour, Interactable
 
     public void Interact(Player player)
     {
-        if (!player.DialogueUI.IsOpen) // Only allow interaction if no dialogue is active
-        {
-            player.DialogueUI.ShowDialogue(dialogueObject);
-        }
+        // Commented out to mute the DialogueUI interaction
+        // if (!player.DialogueUI.IsOpen) // Only allow interaction if no dialogue is active
+        // {
+        //     player.DialogueUI.ShowDialogue(dialogueObject);
+        // }
+
+        // Mute version: 
+        // Optionally, you could call a method here that simulates the dialogue showing
+        // For now, this could simply log to the console:
+        Debug.Log("Dialogue interaction is muted or hidden.");
     }
 }

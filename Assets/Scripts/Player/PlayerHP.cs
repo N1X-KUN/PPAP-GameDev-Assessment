@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : Singleton<PlayerHP>
 {
+    public bool isDead { get; private set; }
+
     [SerializeField] private int maxHealth = 5;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
@@ -14,7 +17,10 @@ public class PlayerHP : Singleton<PlayerHP>
     private bool canTakeDamage = true;
     private Knockback knockback;
     private Flash flash;
+
     const string HEALTH_SLIDER_TEXT = "HP Slider";
+    const string TOWN_TEXT = "House";
+    readonly int DEATH_HASH = Animator.StringToHash("Death");
 
     protected override void Awake()
     {
@@ -25,6 +31,7 @@ public class PlayerHP : Singleton<PlayerHP>
 
     private void Start()
     {
+        isDead = false;
         currentHealth = maxHealth;
         UpdateHPSlider();
     }
@@ -63,11 +70,56 @@ public class PlayerHP : Singleton<PlayerHP>
 
     private void CheckIfPlayerDeath()
     {
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
+            isDead = true;
             currentHealth = 0;
-            Debug.Log("Player Death");
+
+            // Trigger death animation
+            GetComponent<Animator>().SetTrigger(DEATH_HASH);
+
+            // Reset game after death
+            StartCoroutine(ResetGameRoutine());
         }
+    }
+
+    private IEnumerator ResetGameRoutine()
+    {
+        yield return new WaitForSeconds(2f); // Delay for death animation or effect
+
+        // Destroy persistent objects (e.g., PlayerPositionManager, Inventory, etc.)
+        ResetPersistentObjects();
+
+        // Load the Title Screen
+        SceneManager.LoadScene("Title Page"); // Replace with the correct name of your Title Screen scene
+    }
+    private void ResetPersistentObjects()
+    {
+        // Reset all singleton instances
+        Player.ResetInstance();
+        PlayerAtk.ResetInstance();
+        PlayerHP.ResetInstance();
+        PlayerPositionManager.ResetInstance();
+        ActiveInventory.ResetInstance();
+        SceneManagement.ResetInstance();
+
+        // Optionally destroy other objects marked as DontDestroyOnLoad
+        GameObject dontDestroyOnLoad = GameObject.Find("DontDestroyOnLoad");
+        if (dontDestroyOnLoad != null)
+        {
+            Destroy(dontDestroyOnLoad);
+        }
+    }
+
+    private IEnumerator DeathLoadSceneRoutine()
+    {
+        yield return new WaitForSeconds(2f); // Delay for death animation or effect
+
+        // Destroy player object to clean up the scene
+        Destroy(gameObject);
+
+        // Load the title scene
+        SceneManager.LoadScene("Title Page"); // Replace "TitlePage" with your actual title scene name
     }
 
     private IEnumerator DamageRecoveryRoutine()

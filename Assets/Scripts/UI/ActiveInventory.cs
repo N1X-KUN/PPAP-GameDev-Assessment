@@ -1,32 +1,75 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ActiveInventory : MonoBehaviour
+public class ActiveInventory : Singleton<ActiveInventory>
 {
     private int activeSlotIndexNum = 0;
-
     private PlayerControls playerControls;
 
-    private void Awake()
+    protected override void Awake()
     {
-        playerControls = new PlayerControls();
+        base.Awake();  // Ensures Singleton behavior
+
+        // Initialize playerControls if it hasn't been initialized yet
+        if (playerControls == null)
+        {
+            playerControls = new PlayerControls();  // Instantiate the PlayerControls if not done already
+            Debug.Log("playerControls initialized in Awake.");
+        }
+
+        // Check if the instance is initialized before doing anything else
+        if (Instance == null)
+        {
+            Debug.LogError("ActiveInventory Singleton is not initialized!");
+        }
     }
 
     private void Start()
     {
-        playerControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
+        // Ensure playerControls is not null before using it
+        if (playerControls == null)
+        {
+            Debug.LogError("playerControls is not initialized!");
+            return;
+        }
 
-        ToggleActiveHighlight(0);
+        // Ensure that the ActiveInventory.Instance is valid before attempting to toggle
+        if (ActiveInventory.Instance == null)
+        {
+            Debug.LogError("ActiveInventory Singleton is not initialized at Start!");
+            return;
+        }
+
+        // Bind input action only if playerControls is properly initialized
+        playerControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
     }
 
     private void OnEnable()
     {
+        // Ensure playerControls is initialized before enabling it
+        if (playerControls == null)
+        {
+            Debug.LogError("playerControls is not initialized in OnEnable!");
+            return;
+        }
+
+        // Enable the input controls
         playerControls.Enable();
+    }
+
+    public void EquipStartingWeapon()
+    {
+        ToggleActiveHighlight(0);
     }
 
     private void ToggleActiveSlot(int numValue)
     {
+        // Ensure that the ActiveInventory.Instance is valid before attempting to toggle
+        if (ActiveInventory.Instance == null)
+        {
+            Debug.LogError("ActiveInventory.Instance is null. Cannot toggle active slot.");
+            return;
+        }
         ToggleActiveHighlight(numValue - 1);
     }
 
@@ -59,40 +102,47 @@ public class ActiveInventory : MonoBehaviour
 
     private void ChangePlayerAtk()
     {
+        // Check if ActiveWeapon.Instance is initialized
         if (PlayerAtk.Instance == null)
         {
-            Debug.LogError("PlayerAtk.Instance is null! Make sure the PlayerAtk script is initialized.");
+            Debug.LogError("ActiveWeapon.Instance is null! Ensure ActiveWeapon is initialized.");
             return;
         }
 
-        // Destroy the current weapon
+        // Destroy the current active weapon
         if (PlayerAtk.Instance.CurrentPlayerAtk != null)
         {
             Destroy(PlayerAtk.Instance.CurrentPlayerAtk.gameObject);
         }
 
-        // If no weapon is found in the slot, clear the player's attack
-        InventorySlot slot = transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>();
-        if (slot == null)
+        // Get the inventory slot from the active slot index
+        Transform childTransform = transform.GetChild(activeSlotIndexNum);
+        InventorySlot inventorySlot = childTransform?.GetComponentInChildren<InventorySlot>();
+
+        if (inventorySlot == null)
         {
             Debug.LogError($"No InventorySlot found in child {activeSlotIndexNum}!");
-            PlayerAtk.Instance.WeaponNull();
+            PlayerAtk.Instance.WeaponNull(); // Handle no weapon case
             return;
         }
 
-        WeaponInfo weaponInfo = slot.GetWeaponInfo();
+        // Retrieve the weapon info
+        WeaponInfo weaponInfo = inventorySlot.GetWeaponInfo();
+
         if (weaponInfo == null || weaponInfo.weaponPrefab == null)
         {
-            PlayerAtk.Instance.WeaponNull();
+            Debug.LogWarning("No weapon info or weapon prefab found in the selected inventory slot.");
+            PlayerAtk.Instance.WeaponNull(); // Handle no weapon case
             return;
         }
 
-        // Spawn the new weapon
-        GameObject newWeapon = Instantiate(weaponInfo.weaponPrefab, PlayerAtk.Instance.transform.position, Quaternion.identity);
+        // Instantiate the new weapon and assign it as the active weapon
+        GameObject newWeapon = Instantiate(weaponInfo.weaponPrefab, PlayerAtk.Instance.transform);
 
-        PlayerAtk.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
-        newWeapon.transform.parent = PlayerAtk.Instance.transform;
+        // Optionally reset rotation
+        // ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
 
+        // Pass the new weapon to ActiveWeapon
         PlayerAtk.Instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>());
     }
 }

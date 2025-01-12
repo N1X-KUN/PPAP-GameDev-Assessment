@@ -250,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   weaponCollider: {fileID: 9156541840807683072}
+  maxHealth: 10
   transitionName: 
 --- !u!50 &7356561232749433140
 Rigidbody2D:

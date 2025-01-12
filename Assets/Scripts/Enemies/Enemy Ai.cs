@@ -81,29 +81,27 @@ public class EnemyAi : MonoBehaviour
 
     private void Attacking()
     {
-        // Return to roaming if out of attack range
         if (Vector2.Distance(transform.position, Player.Instance.transform.position) > attackRange)
         {
             state = State.Roaming;
             return;
         }
 
-        if (attackRange != 0 && canAttack)
+        if (canAttack)
         {
             canAttack = false;
 
-            // Ensure enemyType is not null and implements IEnemy
-            IEnemy enemy = enemyType as IEnemy;
-            if (enemy != null)
+            // Use fallback behavior if enemyType is invalid
+            if (enemyType is IEnemy enemy)
             {
-                enemy.Attack(); // Call the attack method
+                enemy.Attack();
             }
             else
             {
-                Debug.LogWarning($"EnemyType is not set or doesn't implement IEnemy on {gameObject.name}");
+                Debug.LogWarning($"EnemyType is not set or doesn't implement IEnemy on {gameObject.name}. Using fallback behavior.");
+                PerformDefaultAttack();
             }
 
-            // Handle movement while attacking
             if (stopMovingWhileAttacking)
             {
                 enemyFound.StopMoving();
@@ -113,10 +111,16 @@ public class EnemyAi : MonoBehaviour
                 enemyFound.MoveTo(roamPosition);
             }
 
-            // Start the attack cooldown
             StartCoroutine(AttackCooldownRoutine());
         }
     }
+
+    private void PerformDefaultAttack()
+    {
+        Debug.Log($"{gameObject.name} performs a default attack!");
+        // Add visual effects or other fallback actions here
+    }
+
 
     private void Tracking()
     {
