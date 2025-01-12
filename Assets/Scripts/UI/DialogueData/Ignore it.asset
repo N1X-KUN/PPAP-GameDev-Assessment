@@ -10,14 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67138eaeb82cb0d4faab88296956f0f9, type: 3}
-  m_Name: testDialogue
+  m_Name: Ignore it
   m_EditorClassIdentifier: 
   dialogue:
-  - What happen?
-  - This feels like Deja Vu'
-  - I heard a scream
-  responses:
-  - responseText: Check It
-    dialogueObject: {fileID: 11400000, guid: cbea9e7718853274da983e06068ba5a4, type: 2}
-  - responseText: Not my Problem
-    dialogueObject: {fileID: 11400000, guid: 089862416bd54064c9fa911f301d7b44, type: 2}
+  - Nah... I'd Sleep
+  responses: []

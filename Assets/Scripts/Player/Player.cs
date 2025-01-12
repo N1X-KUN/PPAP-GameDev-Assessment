@@ -6,6 +6,7 @@ public class Player : Singleton<Player>
 {
     public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
 
+    [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform weaponCollider;
     [SerializeField] private int maxHealth = 10; // Maximum health
@@ -21,6 +22,10 @@ public class Player : Singleton<Player>
     private int currentHealth; // Player's current health
 
     public string transitionName = "DefaultTransition"; // Ensure default value for safety
+
+    public DialogueUI DialogueUI => dialogueUI;
+
+    public Interactable Interactable {get; set; }
 
     protected override void Awake()
     {
@@ -51,7 +56,17 @@ public class Player : Singleton<Player>
 
     private void Update()
     {
+        if (dialogueUI.IsOpen) return;
+
         PlayerInput();
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (Interactable != null)
+            {
+                Interactable.Interact(player: this);
+            }
+        }
     }
 
     private void FixedUpdate()
