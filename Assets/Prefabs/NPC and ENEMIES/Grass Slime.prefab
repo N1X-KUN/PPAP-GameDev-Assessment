@@ -18,10 +18,9 @@ GameObject:
   - component: {fileID: 3213658730974532178}
   - component: {fileID: 4036110385460659975}
   - component: {fileID: 5505190779883929711}
-  - component: {fileID: 8627745393246422120}
-  - component: {fileID: 6444718365362955219}
+  - component: {fileID: -1349048918937159347}
   m_Layer: 6
-  m_Name: Water Slime
+  m_Name: Grass Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +36,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.46, y: 1.56, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1843637ea4989294aa986443dbc2734a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e00cd01aeebb3a46980ecba6074d2bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da4172dac1779d4e90242692cb78996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.5
+  moveSpeed: 2
   spriteRenderer: {fileID: 3027995085364786565}
 --- !u!114 &6086263395815461827
 MonoBehaviour:
@@ -184,9 +183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
   attackRange: 5
-  enemyType: {fileID: 8627745393246422120}
+  enemyType: {fileID: 1701255106294762713}
   attackCooldown: 2
-  stopMovingWhileAttacking: 1
+  stopMovingWhileAttacking: 0
 --- !u!95 &1329720749012511082
 Animator:
   serializedVersion: 5
@@ -220,8 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86bdc2d6b51ca944f8881fc484531bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 2
-  deathVFXPrefab: {fileID: 535664073363720015, guid: 2d97c8455ae63114392a87127f9db490, type: 3}
+  startingHealth: 3
+  deathVFXPrefab: {fileID: 535664073363720015, guid: c150a5e27400f0d4bab15ff5186eefaa, type: 3}
 --- !u!114 &4036110385460659975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,27 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: b5e6a33f38059744f97932655ddf7856, type: 2}
   restoreDefaultMatTime: 0.2
---- !u!114 &8627745393246422120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2919916553205725568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68290c781b8af874e84d000e0fba7423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4099515308302490774, guid: 916145812bcbe394aac90eed4c213b92, type: 3}
-  bulletMoveSpeed: 7
-  burstCount: 1
-  projectilesPerBurst: 1
-  angleSpread: 0
-  startingDistance: 0.1
-  timeBetweenBursts: 0.5
-  restTime: 1
---- !u!114 &6444718365362955219
+--- !u!114 &-1349048918937159347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

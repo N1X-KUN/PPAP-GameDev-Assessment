@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
@@ -9,10 +7,8 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         get
         {
-            // Ensure the instance is not null when accessed
             if (instance == null)
             {
-                Debug.LogError($"Instance of {typeof(T)} is not set or has been destroyed.");
             }
             return instance;
         }
@@ -22,31 +18,37 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         if (instance != null && instance != this)
         {
-            Debug.LogWarning($"An instance of {typeof(T)} already exists. Destroying duplicate.");
-            Destroy(this.gameObject); // Destroy duplicate instance
-        }
-        else
-        {
-            instance = (T)this; // Set the singleton instance
-            Debug.Log($"Singleton {typeof(T)} initialized successfully.");
+            Destroy(gameObject); // Destroy duplicate instance
+            return;
         }
 
-        // Ensure the object persists across scene loads
-        if (transform.parent == null)
+        instance = (T)this;
+        Debug.Log($"Singleton {typeof(T)} initialized successfully.");
+
+        // Allow nested GameObjects to persist across scenes
+        Transform rootTransform = transform;
+        while (rootTransform.parent != null)
         {
-            DontDestroyOnLoad(gameObject);
+            rootTransform = rootTransform.parent;
         }
+        DontDestroyOnLoad(rootTransform.gameObject);
     }
 
-    /// <summary>
-    /// Resets the singleton instance by destroying its GameObject and setting the instance to null.
-    /// </summary>
+    public static void ResetAllSingletons()
+    {
+        foreach (var singleton in FindObjectsOfType<T>())
+        {
+            Destroy(singleton.gameObject); // Destroy each Singleton GameObject
+        }
+        instance = null; // Clear the static instance
+    }
+
     public static void ResetInstance()
     {
         if (instance != null)
         {
-            Destroy(instance.gameObject); // Destroy the GameObject associated with the singleton
-            instance = null; // Clear the instance reference
+            Destroy(instance.gameObject);
+            instance = null;
         }
     }
 }

@@ -85,25 +85,20 @@ public class PlayerHP : Singleton<PlayerHP>
 
     private IEnumerator ResetGameRoutine()
     {
-        yield return new WaitForSeconds(2f); // Delay for death animation or effect
+        yield return new WaitForSeconds(2f); // Wait for death animation or delay
+        ResetPersistentObjects(); // Clean up persistent data
 
-        // Destroy persistent objects (e.g., PlayerPositionManager, Inventory, etc.)
-        ResetPersistentObjects();
-
-        // Load the Title Screen
-        SceneManager.LoadScene("Title Page"); // Replace with the correct name of your Title Screen scene
+        // Reload the title screen
+        SceneManager.LoadScene("Title Page");
     }
+
     private void ResetPersistentObjects()
     {
-        // Reset all singleton instances
-        Player.ResetInstance();
-        PlayerAtk.ResetInstance();
-        PlayerHP.ResetInstance();
-        PlayerPositionManager.ResetInstance();
-        ActiveInventory.ResetInstance();
-        SceneManagement.ResetInstance();
+        // Reset singleton instances or objects marked with DontDestroyOnLoad
+        Singleton<Player>.ResetInstance();
+        Singleton<PlayerPositionManager>.ResetInstance();
 
-        // Optionally destroy other objects marked as DontDestroyOnLoad
+        // Destroy remaining persistent objects
         GameObject dontDestroyOnLoad = GameObject.Find("DontDestroyOnLoad");
         if (dontDestroyOnLoad != null)
         {

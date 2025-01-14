@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2989250609919229576}
   - component: {fileID: 2854236657868582225}
   - component: {fileID: 2403719911864285668}
-  - component: {fileID: -9033590878684066098}
+  - component: {fileID: 3263344081399981304}
   m_Layer: 0
   m_Name: Suprise Enemy
   m_TagString: Enemy
@@ -304,7 +304,7 @@ MonoBehaviour:
   enemyType: {fileID: 1630001565011917771}
   attackCooldown: 2
   stopMovingWhileAttacking: 0
---- !u!114 &-9033590878684066098
+--- !u!114 &3263344081399981304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Singleton<Player>
 {
@@ -17,6 +18,7 @@ public class Player : Singleton<Player>
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
     private Knockback knockback;
+    private Vector3 initialPosition;
 
     private bool facingLeft = false;
     private int currentHealth; // Player's current health
@@ -32,7 +34,9 @@ public class Player : Singleton<Player>
     {
         base.Awake();
 
-        // Find DontDestroyOnLoad and set as parent
+        // Store the player's initial position
+        initialPosition = transform.position;
+
         GameObject dontDestroyOnLoad = GameObject.Find("DontDestroyOnLoad");
         if (dontDestroyOnLoad != null)
         {
@@ -46,10 +50,8 @@ public class Player : Singleton<Player>
 
         knockback = GetComponent<Knockback>();
         currentHealth = maxHealth; // Initialize health
-
-        // Dynamically find DialogueUI - this line is commented out.
-        // FindDialogueUI();
     }
+
 
     private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
     {
@@ -62,27 +64,31 @@ public class Player : Singleton<Player>
     //    // DialogUI-related code is commented out here.
     //}
 
+    public void ResetPlayerState()
+    {
+        transform.position = initialPosition; // Reset the player's position
+    }
+
+
     private void Start()
     {
         ActiveInventory.Instance.EquipStartingWeapon();
-        // FindDialogueUI();  // This line is commented out.
     }
 
     private void OnEnable()
     {
         playerControls.Enable();
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded; // Register event
+        SceneManager.sceneLoaded += OnSceneLoaded; // Register event
     }
 
     private void OnDisable()
     {
         playerControls.Disable();
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded; // Unregister event
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unregister event
     }
 
     private void Update()
     {
-        // Removed dialogueUI-related checks.
         PlayerInput();
 
         if (Input.GetKeyDown(KeyCode.F))

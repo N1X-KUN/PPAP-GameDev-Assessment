@@ -14,7 +14,6 @@ public class PlayerAtk : Singleton<PlayerAtk>
     protected override void Awake()
     {
         base.Awake();
-
         playerControls = new PlayerControls();
     }
 
@@ -38,10 +37,23 @@ public class PlayerAtk : Singleton<PlayerAtk>
 
     public void NewWeapon(MonoBehaviour newWeapon)
     {
+        if (newWeapon == null)
+        {
+            Debug.LogError("Attempted to set a null weapon!");
+            return;
+        }
+
         CurrentPlayerAtk = newWeapon;
 
+        IWeapon weapon = newWeapon as IWeapon;
+        if (weapon == null)
+        {
+            Debug.LogError("NewWeapon does not implement IWeapon!");
+            return;
+        }
+
         AttackCooldown();
-        timeBetweenAttacks = (CurrentPlayerAtk as IWeapon).GetWeaponInfo().weaponCooldown;
+        timeBetweenAttacks = weapon.GetWeaponInfo().weaponCooldown;
     }
 
     public void WeaponNull()
