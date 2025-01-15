@@ -45,7 +45,5 @@ public class GameManager : MonoBehaviour
     {
         Singleton<ActiveInventory>.ResetInstance();
         Singleton<PlayerAtk>.ResetInstance();
-        Singleton<CurrencyPoints>.ResetInstance();
-        // Add other Singletons you need to reset here
     }
 }

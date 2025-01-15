@@ -12,15 +12,18 @@ public class NPCDirection : MonoBehaviour
         // Get the SpriteRenderer component attached to the NPC
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Optionally, find the player automatically if not assigned
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
-        }
+        // Try to find the player automatically if not assigned
+        AssignPlayer();
     }
 
     private void Update()
     {
+        // If the player reference is missing, try to find it
+        if (player == null)
+        {
+            AssignPlayer();
+        }
+
         // Check if the player is on the left or right side of the NPC
         if (player != null)
         {
@@ -34,6 +37,16 @@ public class NPCDirection : MonoBehaviour
                 // Player is on the right side; face right
                 spriteRenderer.flipX = false;
             }
+        }
+    }
+
+    private void AssignPlayer()
+    {
+        // Find the player using its tag (ensure the player has the "Player" tag)
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
         }
     }
 }

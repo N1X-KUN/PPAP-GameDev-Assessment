@@ -34,6 +34,21 @@ public class PlayerHP : Singleton<PlayerHP>
         isDead = false;
         currentHealth = maxHealth;
         UpdateHPSlider();
+
+        // Start the health regeneration coroutine
+        StartCoroutine(HealthRegenRoutine());
+    }
+
+    private IEnumerator HealthRegenRoutine()
+    {
+        while (true) // Run indefinitely
+        {
+            yield return new WaitForSeconds(30f); // Wait 30 seconds
+            if (!isDead && currentHealth < maxHealth)
+            {
+                HealPlayer();
+            }
+        }
     }
 
     private void OnCollisionStay2D(Collision2D other)

@@ -126,9 +126,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0846678, y: -0.2116698}
-  m_Size: {x: 1.5887554, y: 1.5887554}
-  m_Direction: 0
+  m_Offset: {x: -0.009675241, y: -0.13398628}
+  m_Size: {x: 6.450052, y: 3.0982926}
+  m_Direction: 1
 --- !u!50 &6857887368895053191
 Rigidbody2D:
   serializedVersion: 4
@@ -268,7 +268,7 @@ MonoBehaviour:
   angleSpread: 0
   startingDistance: 0.1
   timeBetweenBursts: 0.3
-  restTime: 1
+  restTime: 5
 --- !u!114 &6172292525523158341
 MonoBehaviour:
   m_ObjectHideFlags: 0
